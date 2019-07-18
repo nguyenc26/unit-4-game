@@ -23,3 +23,5 @@
                 //new hidden values for the crystals
 //======================
 
+//Variables 
+//=============================
