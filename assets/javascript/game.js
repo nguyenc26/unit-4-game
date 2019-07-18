@@ -7,7 +7,7 @@
     //Listens for a crystal click 
         //add the points to the total score 
     //keeps listening to clicks 
-        //add points until they match the total score(random # generated above)
+        //add points until they match the total score or go over(random # generated above)
 
     //if they match their score with the random display number
         //they win (alerts the win in the box)
@@ -21,3 +21,5 @@
                 //tracks the losses 
                 //new random number 
                 //new hidden values for the crystals
+//======================
+
