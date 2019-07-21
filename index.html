@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
     <!--jQuery CDN-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -19,33 +20,49 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-2 offset-5">Crystal Collectors</div>
+            <div class="col-md-4 offset-4">Crystal Collectors</div>
         </div>
+        <br>
+        <br>
         <div class="row">
             <div class="col-md-5">Game Information</div>
         </div>
-
         <div class="row">
-            <div>
-                <div>Randomized Number</div>
-            </div>
+            <p class="col-md-6 info">
+                You will be given a random number at the start of the game.
+                <br>
+                <br>
+                There are four infinity crystals below. By clicking on a crystal you will add a specific amount of
+                points to your total score.
+                <br>
+                <br>
+                You win the game by matching your total score to the random number, you lose the game if your total
+                score goes above the random number.
+                <br>
+                <br>
+                The value of each crystal is hidden from you until you click on it.
+                <br>
+                <br>
+                Each time when the game starts, the game will change the values of each crystal.
+            </p>
             <div>
                 <div>Wins Losses and Announcement</div>
             </div>
         </div>
 
         <div class="row">
-            <div>Red Crystal</div>
-            <div>Blue Crystal</div>
-            <div>Yellow Crystal</div>
-            <div>Green Crystal</div>
-        </div>
-
-        <div class="row">
-            <div>Total score is:</div>
+            <div class="col-md-6">Randomized Number</div>
+            <div class="col-md-6">Total score display </div>
         </div>
         <div class="row">
-            <div>Total score display </div>
+            <div class="col-md-6 randomNum"></div>
+            <div class="col-md-6 totalScore"></div>
+        </div>
+        <div class="row">
+            <img src="assets/images/Red.jpg" />
+            <img src="assets/images/Green.jpg" />
+            <img src="assets/images/Blue.jpg" />
+            <img src="assets/images/Purple.jpg" />
         </div>
     </div>
 

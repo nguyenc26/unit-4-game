@@ -1,0 +1,16 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-image: url(../images/background.jpg);
+    color: white;
+}
+
+.info {
+    font-size: 10px;
+}
+
+img {
+    width: 175px;
+    height: 175px;
+    margin-left: 45px;
+    opacity: .65;
+}
