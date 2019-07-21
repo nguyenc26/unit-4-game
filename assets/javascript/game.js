@@ -25,3 +25,18 @@
 
 //Variables 
 //=============================
+var randomNum = [];
+var wins = 0;
+var losses = 0;
+var red
+var green
+var blue
+var purple
+var yourScore
+//============================
+
+
+$(document).ready(function() {
+
+
+});
