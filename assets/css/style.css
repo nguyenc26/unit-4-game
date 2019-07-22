@@ -3,6 +3,10 @@ body {
     background-image: url(../images/background.jpg);
     color: white;
 }
+.col-md-12 {
+    font-size: 30px;
+    text-align: center;
+}
 
 .info {
     font-size: 10px;
@@ -11,7 +15,7 @@ body {
 img {
     width: 175px;
     height: 175px;
-    margin-left: 45px;
+    margin-left: 75px;
     opacity: .65;
 }
 
