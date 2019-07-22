@@ -15,6 +15,6 @@ img {
     opacity: .65;
 }
 
-#randomizedNum{
+#randomizedNum, #yourScore, .tracker {
     text-align: center;
 }
