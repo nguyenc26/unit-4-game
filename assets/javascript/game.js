@@ -32,6 +32,8 @@ $(document).ready(function () {
     var randomNum = Math.floor(Math.random() * 101 + 19);
     $("#randomizedNum").html("Random Number <br>" + randomNum);
     console.log(randomNum);
+    $("#yourScore").html("Your Score <br>" + yourScore);
+    $(".tracker").html("Wins= " + wins + "<br><br><br>" + "Losses= " + losses + "<br>");
 
     //generates a random # and puts them into an array
     var crystalarr = []
@@ -41,26 +43,71 @@ $(document).ready(function () {
         if (crystalarr.indexOf(i) === -1) crystalarr.push(i);
     }
     console.log(crystalarr)
-    
+
     //on a click it grabs the number generated above and associates it with the crystal
     $("#red").on("click", function () {
-        console.log(crystalarr[0] + yourScore);
+        var num = parseInt(crystalarr[0]);
+        yourScore += num;
+        $("#yourScore").html("Your Score <br>" + yourScore);
+        if (yourScore > randomNum) {
+            losses++;
+            $(".tracker").html("Wins= " + wins + "<br><br><br>" + "Losses= " + losses + "<br><br><br> You lose!" );
+        } else if (yourScore === randomNum) {
+            wins++;
+            $(".tracker").html("Wins= " + wins + "<br><br><br>" + "Losses= " + losses + "<br><br><br> You win!" );
+        }
+        console.log(yourScore);
     });
     $("#green").on("click", function () {
-        console.log(crystalarr[1]);
+        var num = parseInt(crystalarr[1]);
+        yourScore += num;
+        $("#yourScore").html("Your Score <br>" + yourScore);
+        if (yourScore > randomNum) {
+            losses++;
+            $(".tracker").html("Wins= " + wins + "<br><br><br>" + "Losses= " + losses + "<br><br><br> You lose!" );
+            console.log('you lose');
+        } else if (yourScore === randomNum) {
+            wins++;
+            $(".tracker").html("Wins= " + wins + "<br><br><br>" + "Losses= " + losses + "<br><br><br> You win!" );
+            console.log('you win');
+        }
+        console.log(yourScore);
     });
     $("#blue").on("click", function () {
-        console.log(crystalarr[2]);
+        var num = parseInt(crystalarr[2]);
+        yourScore += num;
+        $("#yourScore").html("Your Score <br>" + yourScore);
+        if (yourScore > randomNum) {
+            losses++;
+            $(".tracker").html("Wins= " + wins + "<br><br><br>" + "Losses= " + losses + "<br><br><br> You lose!" );
+            console.log('you lose');
+        } else if (yourScore === randomNum) {
+            wins++;
+            $(".tracker").html("Wins= " + wins + "<br><br><br>" + "Losses= " + losses + "<br><br><br> You win!" );
+            console.log('you win');
+        }
+        console.log(yourScore);
     });
     $("#purple").on("click", function () {
-        console.log(crystalarr[3]);
+        var num = parseInt(crystalarr[3]);
+        yourScore += num;
+        $("#yourScore").html("Your Score <br>" + yourScore);
+        if (yourScore > randomNum) {
+            losses++;
+            $(".tracker").html("Wins= " + wins + "<br><br><br>" + "Losses= " + losses + "<br><br><br> You lose!" );
+            console.log('you lose');
+        } else if (yourScore === randomNum) {
+            wins++;
+            $(".tracker").html("Wins= " + wins + "<br><br><br>" + "Losses= " + losses + "<br><br><br> You win!" );
+            console.log('you win');
+        }
+        console.log(yourScore);
     });
 
 
 
     //Display wins and losses 
-    $(".tracker").html("Wins= " + wins + "<br><br><br>" + "Losses= " + losses + "<br>");
-    $("#yourScore").html("Your Score <br>" + yourScore);
+
 
 
     //===========================================================
@@ -82,4 +129,10 @@ $(document).ready(function () {
     //wins++;
     //$(".tracker").html("Wins= " + wins + "<br><br><br>" + "Losses= " + losses + "<br><br><br>" + "You have won!");
     //} else {}
+
+    // for (var i = 0; i < 4; i++) {
+    //     var crystalArr = Math.floor(Math.random() * 11) + 1;
+    //     console.log (crystalArr);
+    //     $(".crystal").append(crystalArr);
+    // }
 });
