@@ -20,6 +20,8 @@
 var wins = 0;
 var losses = 0;
 var yourScore = 0;
+var crystalarr = [];
+var randomNum = [];
 //============================
 
 //Main Game
@@ -28,25 +30,26 @@ $(document).ready(function () {
 
     function startGame() {
         yourScore = 0;
+        crystalarr = [];
 
         //at game start 
         //random numnber is displayed between 19 -120
-        var randomNum = Math.floor(Math.random() * 101 + 19);
+        randomNum = Math.floor(Math.random() * 101 + 19);
         $("#randomizedNum").html("Random Number <br>" + randomNum);
         console.log(randomNum);
         $("#yourScore").html("Your Score <br>" + yourScore);
         $(".tracker").html("Wins= " + wins + "<br><br><br>" + "Losses= " + losses + "<br>");
 
         //generates a random # and puts them into an array
-        var crystalarr = []
         //like a 4 loop??
         while (crystalarr.length < 4) {
             var i = Math.floor(Math.random() * 11) + 1;
             if (crystalarr.indexOf(i) === -1) crystalarr.push(i);
         }
         console.log(crystalarr)
+    }
+    startGame();
 
-        //when scores are added and resets they are adding the old values. It has something to do with the stuff from above. Changing the crystalarr stuff. 
 
         //on a click it grabs the number generated above and associates it with the crystal
         $("#red").on("click", function () {
@@ -111,8 +114,7 @@ $(document).ready(function () {
             }
             console.log(yourScore);
         });
-    }
-    startGame();
+    
 
 
     //Display wins and losses 
