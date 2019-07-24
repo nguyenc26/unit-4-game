@@ -114,36 +114,4 @@ $(document).ready(function () {
             }
             console.log(yourScore);
         });
-    
-
-
-    //Display wins and losses 
-
-
-
-    //===========================================================
-    //Listens for a crystal click 
-    //add the points to the total score 
-    //keeps listening to clicks 
-    //add points until they match the total score or go over(random # generated above)
-
-    // if (yourScore === randomNum) {
-    //     wins++;
-    // } else {
-    //     //continue listening for clicks 
-    //     if ()
-    // }
-
-
-    //Win or lose 
-    //if (goal === yourScore) {
-    //wins++;
-    //$(".tracker").html("Wins= " + wins + "<br><br><br>" + "Losses= " + losses + "<br><br><br>" + "You have won!");
-    //} else {}
-
-    // for (var i = 0; i < 4; i++) {
-    //     var crystalArr = Math.floor(Math.random() * 11) + 1;
-    //     console.log (crystalArr);
-    //     $(".crystal").append(crystalArr);
-    // }
 });
